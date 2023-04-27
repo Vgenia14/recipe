@@ -1,0 +1,73 @@
+.container_rightBoardIT {
+  grid-area: rightB;
+  color: var(--my-Text);
+  background-color: var(--my-Element4);
+  margin: 7vh 0.5vw;
+  right: 0;
+  height: 92vh;
+  width: 25vw;
+  overflow: scroll;
+  /* width: 100%; */
+  position: fixed;
+  border-left: 1px solid rgba(0, 0, 0, 0.253);
+}
+.container_rightBoardIT .box_r{
+display: grid;
+  grid-template-rows: 4vh 8vh 16vh 1fr 1fr 10vh;
+  height: 92vh;
+
+}
+
+/* isMein */
+.container_rightBoardIT .box_r div:nth-of-type(1) {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: end;
+  padding: 0 1vw;
+}
+/* Name */
+.container_rightBoardIT .box_r .name_ricipe{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+/* Image */
+.container_rightBoardIT .box_r img{
+  height: 15vh;
+  width: 15vw;
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+}
+/* Ingridients */
+.container_rightBoardIT .ingridients {
+grid-column: 1/2;
+  grid-row: 4/5;
+  /* justify-self: start; */
+}
+.container_rightBoardIT ul{
+  text-align: left;
+  padding: 0 5vw;
+  font-size: 0.9vw;
+
+}
+/* Beschreibung */
+.container_rightBoardIT .box_description {
+grid-column: 1/2;
+  grid-row: 5/6;
+}
+.box_description p:nth-of-type(2){
+  text-align: left;
+  padding: 0 1.2vw;
+  font-size: 0.9vw;
+
+}
+/* buttons */
+.container_rightBoardIT .buttons {
+ grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+ 

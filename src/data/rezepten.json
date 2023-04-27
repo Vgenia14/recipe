@@ -1,0 +1,16 @@
+{
+  "rezept": [
+    {
+      "salat": {
+        "ingridients": [1,5,3],
+        "describe": "2"
+      }
+    },
+    {
+      "suppe": {
+        "ddf": 2,
+        "dfdfff": 3
+      }
+    }
+  ]
+}

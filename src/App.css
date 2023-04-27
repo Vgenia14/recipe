@@ -1,0 +1,67 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --my-Background: white;
+  --my-Element: #FBFAEC;/* sideboard */
+  --my-Element4: #FBFAEC;/* rightBoard */
+  --my-Element5: #FBFAEC;/* menü in nav */
+
+  --my-Element3: #ADAC9A;/* card */
+  --my-Element2: #ADAC9A;/* nav */
+
+  
+
+  --my-Text: #484838;
+  --my-Text1: #3B3B30;
+
+  --my-Effect: #A0C9C2;
+}
+.App {
+  text-align: center;
+  background-color: var(--my-Background);
+  display: grid;
+  /* height: 100vh; */
+  grid-template-areas:
+    "nav nav nav"
+    "sideB liste rightB";
+  grid-template-columns: 18vw 56vw 26vw;
+  grid-template-rows: 6.5vh 93.5vh;
+  position: relative;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

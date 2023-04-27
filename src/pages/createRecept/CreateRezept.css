@@ -1,0 +1,118 @@
+.container_newRecipe {
+  grid-area: liste;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1vh 0 3vh;
+}
+.container_newRecipe h2{
+    margin-top: 1vw;
+    font-size: 3.5vw;
+}
+.box_form {
+  display: grid;
+  grid-template-rows: 10vh 7vh 7vh 21vh 7vh 5vh 12vh;
+  grid-template-columns: 1fr 5vw 5vw 6vw;
+  gap: 0.5vw;
+  margin: 0 auto;
+}
+.container_newRecipe label {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  text-align: start;
+  justify-self: start;
+  font-size: 1.4vw;
+}
+
+.box_form label input {
+  height: 3.7vh;
+  width: 33vw;
+  font-size: 1.6vw;
+}
+
+/* NAME */
+.box_form label:nth-of-type(1) {
+  grid-column: 1/5;
+  grid-row: 1/2;
+}
+.box_form label:nth-of-type(1) input{
+  width: 51vw
+
+}
+/* Foto*/
+.box_form label:nth-of-type(2) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+/* Zutaten*/
+.box_form label:nth-of-type(3) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+/* Zutaten Anzahl*/
+.box_form label:nth-of-type(4) {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+/* Zutaten Einheit*/
+.box_form label:nth-of-type(5) {
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+.box_form label:nth-of-type(4) input,
+.box_form label:nth-of-type(5) input {
+  width: 4.5vw;
+}
+.box_form span {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  align-self: flex-end;
+  padding-bottom: 0.2vh;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+/* Beschreibung */
+.box_form label:nth-of-type(6) {
+  grid-column: 1/5;
+  grid-row: 4/5;
+  justify-self: stretch;
+}
+.box_form textarea {
+  height: 17vh;
+}
+
+/* Kategorie */
+.box_form label:nth-of-type(7) {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+/* Kategorie button */
+.box_form button:nth-of-type(1) {
+  grid-column: 2/4;
+  grid-row: 5/6;
+  width: 13vw;
+  height: 4.3vh;
+  font-size: 1.4vw;
+  align-self: flex-end;
+}
+/* zusätzlich */
+.box_form a:nth-of-type(1) {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  justify-self: start;
+  align-self: end;
+}
+/* button  erstellen*/
+.box_form button:nth-of-type(2), .button_update {
+  grid-column: 1/4;
+  grid-row: 7/8;
+  width: 30vw;
+  height: 5vh;
+  justify-self: center;
+  font-size: 2vw;
+  background-color: var(--my-Element);
+  color: var(--my-Effect);
+align-self: center;
+}

@@ -1,0 +1,98 @@
+.box_nav_main {
+  grid-area: nav;
+  position: relative;
+}
+.box_nav_main li {
+  list-style: none;
+}
+.container_nav {
+  background: var(--my-Element2);
+  display: grid;
+  grid-template-columns: 17.5vw 56vw 25.5vw;
+  height: 6.5vh;
+  margin: 0 0.5vw;
+  position: fixed;
+}
+.container_nav a {
+  text-decoration: none;
+  color: var(--my-Text);
+}
+.container_nav {
+  list-style: none;
+}
+/* LOGO */
+.box_logo h1 {
+  display: flex;
+}
+.box_logo h1 a {
+  font-size: 2vw;
+  color: var(--my-Effect);
+  text-shadow: 0px 0px 1px var(--my-Effect);
+}
+.box_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* MENÜ */
+.active {
+  background-color: var(--my-Background);
+}
+.box_menü {
+  align-self: end;
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 10px 0 0 0;
+  height: 55%;
+}
+.box_menü li {
+  /* border: 1px solid black; */
+  background-color: var(--my-Element5);
+  height: 50%;
+}
+.box_menü li a {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3vw;
+}
+.box_menü li {
+  color: var(--my-Element);
+  height: 100%;
+  width: 100%;
+}
+.box_menü li:hover {
+  background-color: var(--my-Background);
+}
+/* LOGIN; EINKAUFSLISTE */
+.box_login {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.box_login li {
+  margin: 0 10px;
+  font-size: 1.5vw;
+}
+/* wenn angemeldet */
+.isGelogged li{
+  color: var(--my-Element);
+  text-Transform: uppercase;
+  border: 1px solid var(--my-Element);
+  border-radius: 40%;
+}
+.isGelogged button, .notGelogged{
+  color: var(--my-Text);
+  text-transform: uppercase;
+  background: none;
+  border: none;
+}
+.isGelogged button:hover, .notGelogged:hover {
+  cursor: pointer;
+  color: var(--my-Element);
+}

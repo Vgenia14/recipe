@@ -1,0 +1,66 @@
+.container_sideboard {
+  /* width: 19.5%; */
+  background-color: var(--my-Element);
+  margin: 7vh 0.5vw;
+
+  grid-area: sideB;
+  width: 17vw;
+  position: fixed;
+}
+.box_sideboard {
+  /* position: fixed; */
+  display: grid;
+  grid-template-rows: 8vh 78vh 6vh;
+  /* height: 92vh; */
+  /* width: 100%; */
+  justify-self: center;
+}
+/* SUCHE */
+.box_sideboard input {
+  width: 16vw;
+  height: 3vh;
+  font-size: 1vw;
+  margin-top: 4px;
+}
+.box_sideboard label {
+  margin-top: 0.7vw;
+  font-size: 1.3vw;
+  font-weight: 200;
+}
+/* KATEGORIEN */
+.box_Kategorien {
+  text-align: left;
+  margin-left: 0.5vw;
+}
+.box_Kategorien p {
+  margin: 1.2vh 0;
+  font-size: 2.4vw;
+  color: var(--my-Text1);
+  text-align: center;
+}
+.box_Kategorien li {
+  color: var(--my-Text1);
+  list-style: none;
+  margin: 0.5vh;
+  font-size: 0.9vw;
+}
+/* BUTTON */
+.container_sideboard button {
+  width: 80%;
+  height: 4vh;
+  background-color: var(--my-Effect);
+  box-shadow: 0 5px 5px rgb(128, 124, 120);
+  border: none;
+  font-size: 1.6vw;
+  font-weight: bold;
+  /* align-self: center; */
+}
+.container_sideboard button:hover {
+  box-shadow: none;
+  background-color: var(--my-Effect);
+  box-shadow: 0 5px 5px rgb(128, 124, 120) inset;
+}
+.container_sideboard a {
+  text-decoration: none;
+  color: var(--my-Text);
+}

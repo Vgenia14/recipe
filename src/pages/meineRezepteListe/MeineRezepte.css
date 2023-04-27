@@ -1,0 +1,143 @@
+.container_myRecipe {
+  margin-top: 7vh;
+  grid-area: liste;
+  padding: 1vw;
+
+width: 100%;
+}
+.box_myRecipe{
+}
+/* CARUSEL */
+.container_myRecipe .containerCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 10px;
+  /* overflow: scroll; */
+}
+/* KATEGORIE */
+.box_myRecipe ul {
+  display: flex;
+  list-style: none;
+  padding: 5px;
+}
+.box_myRecipe ul li a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: var(--my-Text);
+}
+.box_myRecipe .active {
+  color: var(--my-Effect);
+}
+/* Kärtchen */
+.button_moov {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--my-Element3);
+  text-shadow: 0 0 1px var(--my-Element3);
+}
+.button_moov:hover {
+  color: var(--my-Element);
+  text-shadow: 0 2px 2px var(--my-Element3);
+  
+}
+.container_myRecipe .box_card {
+ width: 100%;
+ height: 100%;
+  border: 1px solid var(--my-Text);
+  display: grid;
+  grid-template-columns: 4vw 1fr 4vw 2vw 2vw;
+  grid-template-rows: 2vw 2vw 1fr 15%;
+  background-color: var(--my-Element3);
+}
+.container_myRecipe .containerCard a {
+  height: 18vh;
+   width: 17.5vw;
+   text-decoration: none;
+   display: flex;
+  gap: 10px;
+}
+/* KÄRTCHEN */
+.box_myRecipe .box_card h3,
+.box_myRecipe .box_card span,
+.box_myRecipe .box_card p {
+  color: var(--my-Text);
+}
+
+/* G R I D    A R E A */
+
+/* BILD */
+.box_myRecipe .box_card img {
+  width: 4vw;
+  height: 4vw;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  align-self: center;
+  justify-self: center;
+}
+/* NAME REZEPT */
+.box_myRecipe .box_card h3 {
+  grid-column: 2/6;
+  grid-row: 1/2;
+  font-size: 1vw;
+  justify-self: center;
+  align-self: center;
+}
+/* KATEGORIE */
+.box_myRecipe .box_card p:nth-of-type(2) {
+  grid-column: 2/6;
+  grid-row: 2/3;
+  align-self: center;
+  justify-self: center;
+  font-size: 0.6vw;
+  font-weight: bold;
+}
+/* INGRIDIENTS */
+.box_myRecipe .box_card p:nth-of-type(3) {
+  grid-column: 1/6;
+  grid-row: 3/4;
+  font-size: 1vw;
+  align-self: center;
+  overflow: hidden;
+}
+.box_myRecipe .box_card p:nth-of-type(3) span {
+  font-size: 0.5vw;
+}
+/* BEWERTUNG */
+.box_myRecipe .box_card p:nth-of-type(1) {
+  grid-column: 1/3;
+  grid-row: 4/6;
+  justify-self: START;
+  align-self: center;
+  font-size: 0.6vw;
+}
+/* BUTTON MENÜ */
+.box_myRecipe .box_card button:nth-of-type(1) {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  font-size: 0.8vw;
+}
+/* BUTTON RED */
+.box_myRecipe .box_card button:nth-of-type(2) {
+  grid-column: 4/5;
+  grid-row: 4/5;
+  font-size: 0.8vw;
+}
+/* BUTTON DEL */
+.box_myRecipe .box_card button:nth-of-type(3) {
+  grid-column: 5/6;
+  grid-row: 4/5;
+  font-size: 0.8vw;
+}
+/* SCROLL KARTCHEN */
+.box_myRecipe .box_card button {
+  background: none;
+  border: none;
+  color: var(--my-Background);
+  font-size: 2vw;
+}
+.box_myRecipe .box_card button:hover {
+  color: var(--my-Effect);
+  cursor: pointer;
+}
