@@ -26,14 +26,12 @@ export default function RecipeIT({ recipes }) {
                     1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17,
                     18, 19, 20,
                   ].map((n, i) => {
-                    if (!recipe[`strIngredient${n}`] === "") {
-                      return (
-                        <li key={i}>
-                          {recipe[`strIngredient${n}`]}{" "}
-                          {recipe[`strMeasure${n}`]},
-                        </li>
-                      );
-                    }
+                    return (
+                      <li key={i}>
+                        {recipe[`strIngredient${n}`]} {recipe[`strMeasure${n}`]}
+                        ,
+                      </li>
+                    );
                   })}
                 </p>
 

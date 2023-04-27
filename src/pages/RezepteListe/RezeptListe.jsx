@@ -34,14 +34,12 @@ export default function RezeptListe({ recipes }) {
                 <p>{recipe.strCategory}</p>
                 <p>
                   {num.map((n, i) => {
-                    if (!recipe[`strIngredient${n}`] === "") {
-                      return (
-                        <span key={i}>
-                          {recipe[`strIngredient${n}`]}{" "}
-                          {recipe[`strMeasure${n}`]},
-                        </span>
-                      );
-                    }
+                    return (
+                      <span key={i}>
+                        {recipe[`strIngredient${n}`]} {recipe[`strMeasure${n}`]}
+                        ,
+                      </span>
+                    );
                   })}
                 </p>
 
