@@ -1,10 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import {
-  BrowserRouter,
-  Route,
-  Routes
-} from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { AuthContextProvider } from "./context/context";
 
@@ -23,18 +19,19 @@ import RecipeIT from "./pages/Recipe/RecipeIT";
 
 function App() {
   const [recipes, setRecipes] = useState([]);
-
-  const url = process.env.REACT_APP_URL;
-  function createRecepes() {
-    fetch(url)
-      .then((response) => response.json())
+  function createRecipes() {
+    fetch(process.env.REACT_APP_URL)
+      .then((response) => {
+        console.log(response);
+        return response.json();
+      })
       .then((data) => {
-        setRecipes(data.meals);
-      });
+        return setRecipes(data.meals);
+      })
+      .catch((e) => console.log(e));
   }
-  console.log(recipes);
   useEffect(() => {
-    createRecepes();
+    createRecipes();
   }, []);
 
   return (
