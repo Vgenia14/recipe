@@ -20,7 +20,7 @@ import RecipeIT from "./pages/Recipe/RecipeIT";
 function App() {
   const [recipes, setRecipes] = useState([]);
   function createRecipes() {
-    fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=D")
+    fetch(process.env.REACT_APP_URL)
       .then((response) => {
         console.log(response);
         return response.json();
