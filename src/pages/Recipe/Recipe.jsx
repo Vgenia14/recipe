@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 export default function Recipe() {
   const [document, setDocument] = useState(null);
-  const [setError] = useState(null);
+  const [error, setError] = useState(null);
   const context = useContext(AuthContext);
   const container = useRef(null);
   const { id } = useParams();

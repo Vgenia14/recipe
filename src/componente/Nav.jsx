@@ -4,26 +4,25 @@ import { Link, NavLink } from "react-router-dom";
 // import { ContextColor } from "../context/context";
 import "./Nav.css";
 import { AuthContext } from "../context/context";
-import { projectAuth} from "../firebase/firebase";
+import { projectAuth } from "../firebase/firebase";
 
 export default function Nav() {
   const context = useContext(AuthContext);
- 
-   const [setError] = useState(null);
+
+  const [error, setError] = useState(null);
   // const color = useContext(ContextColor);
-      const logout = async () => {
-        setError(null);
-        try {
-          await projectAuth.signOut();
-          context.dispatch({ type: "LOGOUT" });
-        } catch (err) {
-          setError(err.message);
-        }
-      };
-      const handleLogout = (e) => {
-        e.preventDefault();
-        logout();
-      };
+  const logout = async () => {
+    try {
+      await projectAuth.signOut();
+      context.dispatch({ type: "LOGOUT" });
+    } catch (err) {
+      setError(err.message);
+    }
+  };
+  const handleLogout = (e) => {
+    e.preventDefault();
+    logout();
+  };
   return (
     <div className="box_nav_main">
       <div

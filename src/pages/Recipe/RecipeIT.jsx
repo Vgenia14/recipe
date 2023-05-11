@@ -8,7 +8,7 @@ export default function RecipeIT({ recipes }) {
   return (
     <div className="container_rightBoard">
       {/* <RightBoard> */}
-      {recipes.map(
+      {recipes?.map(
         (recipe) =>
           recipe.idMeal === id && (
             <div className="box_r">
